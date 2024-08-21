@@ -1,0 +1,5 @@
+此程式集包含
+1)將指定URL的流星雨影片，根據兩frame的亮度差異與threshold比較，輸出可能有流星的frame
+2)將frame轉成video
+3)將所有frame或指定時間範圍的frame combine成一個frame
+4)將指定URL的video，每隔多少時間combine成一張圖，類似重複曝光的效果
