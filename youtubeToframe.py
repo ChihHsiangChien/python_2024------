@@ -2,6 +2,7 @@ import cv2
 import yt_dlp
 import os
 
+# 偵測指定時間的天空變化
 meteorTime = [[0,36,26],
  [1,4,44],
  [1,10,28],
@@ -208,7 +209,7 @@ url = "https://www.youtube.com/live/2sjlviZZB94?si=bJSe23PGgeb-XZMt"
 video_stream_url = get_streaming_url(url)
 
 
-
+# 限定天空某個範圍
 # Define ROI as (x1, y1, x2, y2) where (x1, y1) is the top-left and (x2, y2) is the bottom-right
 roi = (50, 50, 500, 270)
 
@@ -220,6 +221,7 @@ os.makedirs(output_dir, exist_ok=True)
 for time in meteorTime:
     # Define the start and end time in seconds
     h,m,s = time[0],time[1],time[2]
+    # 10秒內
     duration = 10
 
     start_time = h*60*60 + m*60 + s

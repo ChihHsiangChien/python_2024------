@@ -9,6 +9,7 @@ import numpy as np
 image_folder = 'overlaps'
 image_filename = 'satellite_combined_image.jpg'
 
+# 從指定資料夾將所有圖片都combine
 # Get a list of all files in the folder, sorted by filename
 images = sorted([img for img in os.listdir(image_folder) if img.endswith(".jpg") or img.endswith(".png")])
 

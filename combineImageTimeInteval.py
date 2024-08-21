@@ -3,11 +3,13 @@ import os
 import numpy as np
 from datetime import time
 
+
 # Path to the folder containing images
 image_folder = 'overlaps'
 output_filename = 'output.jpg'
 
 # Define the start and end times (hh, mm, ss)
+# 從指定資料夾中，將特定日期範圍的照片檔案結合在一起 例如檔案名稱符合從1:40:00-1:45:00的就抓下
 start_time = time(1, 40, 0)
 end_time = time(1, 45, 0)
 
